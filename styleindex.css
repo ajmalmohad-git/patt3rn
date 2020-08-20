@@ -1,0 +1,88 @@
+@font-face{
+    font-family: 'beon';
+    src: url(Beon.otf);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #11111a;
+    font-family: sans-serif;
+    height:100vh;
+    width:100%;
+}
+h1
+{
+    font-family: 'beon', sans-serif;
+    text-align: center;
+    font-size: 55px;
+    margin-top:8vh;
+    color:rgb(12, 197, 197);
+    letter-spacing: 3.5px;
+    animation: neon .08s ease-in-out infinite alternate;
+}
+    
+ 
+@keyframes neon {
+    from {
+        text-shadow:
+        0 0 30px rgba(202,228,225,0.34),
+        0 0 12px rgba(30,132,242,0.52),
+        0 0 18px rgba(30,132,242,0.92),
+        0 0 30px rgba(30,132,242,0.78),
+        0 0 44px rgba(30,132,242,0.92);
+      }
+      to {
+        text-shadow:
+        0 0 30px rgba(202,228,225,0.42),
+        0 0 12px rgba(30,132,242,0.58),
+        0 0 22px rgba(30,132,242,0.84),
+        0 0 34px rgba(30,132,242,0.88),
+        0 0 54px rgba(30,132,242,1);
+      }    
+  }
+.btns
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+}
+.first
+{
+    margin-top:10vh;
+}
+button
+{
+    margin:2vh;
+    padding:4vh;
+    width:250px;
+    text-align: center;
+    font-size: 30px;
+    color:rgb(12, 197, 197);
+    background:rgb(5, 1, 14);
+    border:none;
+    transition: 0.5s;
+    font-variant: small-caps;
+    border-radius: 10px;
+}
+a
+{
+    text-decoration: none;
+}
+button:hover
+{
+    color:rgb(228, 222, 222);
+    background:rgb(4, 192, 192);
+}
+button:active
+{
+    color:rgb(252, 63, 151);
+    background:rgb(0, 0, 0);
+}
